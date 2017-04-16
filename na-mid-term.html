@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2017-04-16 Sun 23:38 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title></title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Li Jiajie" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org0817bdd">1. 数值分析与科学计算引论</a>
+<ul>
+<li><a href="#org13be20a">1.1. 数值计算别的误差</a></li>
+</ul>
+</li>
+<li><a href="#orgb55553d">2. 插值法</a>
+<ul>
+<li><a href="#org085c5dc">2.1. 拉格朗日插值</a></li>
+<li><a href="#orgca563a0">2.2. 均差与牛顿差值多项式</a></li>
+<li><a href="#org3413009">2.3. 埃尔米特插值</a></li>
+<li><a href="#org2920837">2.4. 分段低次插值</a></li>
+<li><a href="#org33eca0c">2.5. 三次样条插值</a></li>
+</ul>
+</li>
+<li><a href="#orga1ac9c5">3. 函数逼近与快速傅里叶变换</a>
+<ul>
+<li><a href="#org9308d73">3.1. 函数逼近的基本概念</a></li>
+<li><a href="#orgf41d2d6">3.2. 正交多项式</a></li>
+<li><a href="#orgcad61a0">3.3. 最佳平方逼近</a></li>
+<li><a href="#orgc343c46">3.4. 曲线拟合的最小二乘法</a></li>
+<li><a href="#org476945f">3.5. 有理逼近</a></li>
+<li><a href="#orgdfde269">3.6. 三角多项式逼近与快速傅里叶变换</a></li>
+</ul>
+</li>
+<li><a href="#orgc627e62">4. 数值积分与数值微分</a>
+<ul>
+<li><a href="#org866d469">4.1. 数值积分概论</a></li>
+<li><a href="#org4f31a1f">4.2. 牛顿-柯特斯公式</a></li>
+<li><a href="#orgb259a4e">4.3. 复合求积公式</a></li>
+<li><a href="#org4544b58">4.4. 龙贝格求积公式</a></li>
+<li><a href="#org0d01634">4.5. 自适应求积公式</a></li>
+<li><a href="#orge4c6366">4.6. 高斯求积公式</a></li>
+<li><a href="#org0e50873">4.7. 多重积分</a></li>
+<li><a href="#org2911c47">4.8. 数值微分</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0817bdd" class="outline-2">
+<h2 id="org0817bdd"><span class="section-number-2">1</span> 数值分析与科学计算引论</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>数值分析用于求解数学问题时不能求的解析解，从而通过数值方法来求其近似解</li>
+</ul>
+</div>
+<div id="outline-container-org13be20a" class="outline-3">
+<h3 id="org13be20a"><span class="section-number-3">1.1</span> 数值计算别的误差</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>通过其近似误差与其精确解之间的误差称为阶段误差或方法误差</li>
+<li>其意义在于，通过误差来体现方法解决问题的性能</li>
+<li>在考虑到在不同的问题中，误差的大小通常在不同的范围内浮动，又考虑到精确误差在实际问题中一般不易求的，因此，将近似值的误差与近似值的误差的比座位想读误差，其中分母为近似值的绝对值时，作为相对误差限。</li>
+<li>有效数字与近似误差的关系有利于根据需求在问题中选择合适的方式来求的满足条件的近似解并兼顾计算效率。</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb55553d" class="outline-2">
+<h2 id="orgb55553d"><span class="section-number-2">2</span> 插值法</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>插值法适用于拟合给定数据点的曲线，来获得某种数据点之间内在规律。</li>
+</ul>
+</div>
+<div id="outline-container-org085c5dc" class="outline-3">
+<h3 id="org085c5dc"><span class="section-number-3">2.1</span> 拉格朗日插值</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>拉格朗日插值法将近似函数作为基函数的线性组合。</li>
+<li>其中基函数的形式受近似函数的最高项次数决定。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgca563a0" class="outline-3">
+<h3 id="orgca563a0"><span class="section-number-3">2.2</span> 均差与牛顿差值多项式</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>为了适应于插值节点删减的情况，一种逐次生成插值多项式的方法被设计。</li>
+<li>在定义了均差之后，每次迭代时增加当前插值节点的基函数与n阶均差的方法被称为牛顿插值多项式。</li>
+<li>在任意两个插值节点等距的情况下，通过总结规律又有查分形式的牛顿差值公式。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3413009" class="outline-3">
+<h3 id="org3413009"><span class="section-number-3">2.3</span> 埃尔米特插值</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li>埃尔米特插值适用于各节点导数值或高阶导数值相等的情况。</li>
+<li>不同与牛顿差值多项式，埃尔米特插值的最后一项，即包含所有节点的基函数一项的系数，通过到数相同的条件来求得，其余项系数同泰勒展开。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2920837" class="outline-3">
+<h3 id="org2920837"><span class="section-number-3">2.4</span> 分段低次插值</h3>
+<div class="outline-text-3" id="text-2-4">
+<ul class="org-ul">
+<li>分段低次插值即将节点分为多段，对于任一段，独立计算其插值函数。来规避高次插值的病态问题。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org33eca0c" class="outline-3">
+<h3 id="org33eca0c"><span class="section-number-3">2.5</span> 三次样条插值</h3>
+<div class="outline-text-3" id="text-2-5">
+<ul class="org-ul">
+<li>由于分段插值在各段相连处存在不光滑的问题，为了获得更为平滑的曲线，即各交点处两侧导数存在且相等。</li>
+<li>其中样条插值函数为埃尔米特插值的基函数的线性组合，其中，基函数的系数，通过自然边界条件来求得，这也保证了所得样条插值函数在交点上的光滑性。</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orga1ac9c5" class="outline-2">
+<h2 id="orga1ac9c5"><span class="section-number-2">3</span> 函数逼近与快速傅里叶变换</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-org9308d73" class="outline-3">
+<h3 id="org9308d73"><span class="section-number-3">3.1</span> 函数逼近的基本概念</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>对于任意函数，可以用简单函数的线性组合来逼近。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf41d2d6" class="outline-3">
+<h3 id="orgf41d2d6"><span class="section-number-3">3.2</span> 正交多项式</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>勒让德多项式与切比雪夫分别为权函数不同时，由序列{x<sup>n</sup>} 正交化得到的正交多项式。</li>
+<li>通过这两种正交多项式的根进行插值，可以避免龙格现象。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgcad61a0" class="outline-3">
+<h3 id="orgcad61a0"><span class="section-number-3">3.3</span> 最佳平方逼近</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>通过最小化目标函数与近似函数的差的范数的平方，来求解近似函数。将近似函数作为基函数的线性组合，则问题可化为求解基函数的系数的偏导数为零的方程组。</li>
+<li>若基函数为正交函数族，则问题可化为求解广义傅里叶级数，而广义傅里叶级数通过计算各阶近似函数与目标函数的内积求得。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc343c46" class="outline-3">
+<h3 id="orgc343c46"><span class="section-number-3">3.4</span> 曲线拟合的最小二乘法</h3>
+<div class="outline-text-3" id="text-3-4">
+<ul class="org-ul">
+<li>通过最小化目标函数与近似函数的差的平方，来求解近似函数。</li>
+<li>根据实际情况，确定近似函数的形式，即通过最小化最小二乘法的代价函数，来求解近似函数的参数。</li>
+<li>当近似函数为基函数的线性组合时，且基函数为正交函数族，则可根据已知的公式来求解基函数的系数，来求解近似函数。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org476945f" class="outline-3">
+<h3 id="org476945f"><span class="section-number-3">3.5</span> 有理逼近</h3>
+<div class="outline-text-3" id="text-3-5">
+<ul class="org-ul">
+<li>有理逼近指通过形如两种近似函数的比值为近似函数来逼近目标函数，从而适用于目标函数在某点附近无界时的效果。</li>
+<li>帕得逼近为求函数在原点时满足原点处n阶导数一致情况下的逼近，通过求解线性方程组求得。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdfde269" class="outline-3">
+<h3 id="orgdfde269"><span class="section-number-3">3.6</span> 三角多项式逼近与快速傅里叶变换</h3>
+<div class="outline-text-3" id="text-3-6">
+<ul class="org-ul">
+<li>以周期函数为基函数的近似函数。</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc627e62" class="outline-2">
+<h2 id="orgc627e62"><span class="section-number-2">4</span> 数值积分与数值微分</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-org866d469" class="outline-3">
+<h3 id="org866d469"><span class="section-number-3">4.1</span> 数值积分概论</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>数值积分用于求目标函数积分有难度的情况。</li>
+<li>用代数精度来体现求积公式的性能。</li>
+<li>可以将被积函数用插值函数来逼近，则有插值型的求积公式。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4f31a1f" class="outline-3">
+<h3 id="org4f31a1f"><span class="section-number-3">4.2</span> 牛顿-柯特斯公式</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>通过将被积区间上的灯具店，通过插值多项式来逼近被积函数，通过求积差值多项式来获得数值积分。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb259a4e" class="outline-3">
+<h3 id="orgb259a4e"><span class="section-number-3">4.3</span> 复合求积公式</h3>
+<div class="outline-text-3" id="text-4-3">
+<ul class="org-ul">
+<li>由于牛顿-柯特斯公式的性能限制，通过将被积区间划分为多个子区间，对各个子区间各自求得低次的多项式插值。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4544b58" class="outline-3">
+<h3 id="org4544b58"><span class="section-number-3">4.4</span> 龙贝格求积公式</h3>
+<div class="outline-text-3" id="text-4-4">
+<ul class="org-ul">
+<li>一种通过每次将子区间一分为二的方式来逐步获取更高精度的数值积分。每次递归可由递归公式求得新的近似值。</li>
+<li>在近似值的误差能表示成h的幂级数时又有理查德外推法来加速精度的提升。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0d01634" class="outline-3">
+<h3 id="org0d01634"><span class="section-number-3">4.5</span> 自适应求积公式</h3>
+<div class="outline-text-3" id="text-4-5">
+<ul class="org-ul">
+<li>再对每个子区间进行辛普森公式，再考察其精度，则可减少计算次数。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge4c6366" class="outline-3">
+<h3 id="orge4c6366"><span class="section-number-3">4.6</span> 高斯求积公式</h3>
+<div class="outline-text-3" id="text-4-6">
+<ul class="org-ul">
+<li>将积分看作被积函数在某点的值的线性组合。</li>
+<li>得到权函数的节点位置以及其系数的线性方程组。</li>
+<li>以勒让德多项式货切比雪夫多项式的的根为权函数的节点，求解系数。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0e50873" class="outline-3">
+<h3 id="org0e50873"><span class="section-number-3">4.7</span> 多重积分</h3>
+<div class="outline-text-3" id="text-4-7">
+<ul class="org-ul">
+<li>通过复合辛普森公式将多重积分化为低重积分，直至可以直接使用复合辛普森公式对各个子积分求值。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2911c47" class="outline-3">
+<h3 id="org2911c47"><span class="section-number-3">4.8</span> 数值微分</h3>
+<div class="outline-text-3" id="text-4-8">
+<ul class="org-ul">
+<li>类似于导数求极限。</li>
+<li>将原函数的近似函数的导数值作为原函数的导数的近似值。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Li Jiajie</p>
+<p class="date">Created: 2017-04-16 Sun 23:38</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

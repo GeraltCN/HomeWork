@@ -1,0 +1,23 @@
+* ost
+\max \limits_{x,y} \theta = arccos(\frac{(h-tan(\alpha)Dx)^{2}+(h+H-tan(\alpha)Dx)^{2}+2(d+Dx)^{2}-H^{2}}{2\sqrt{(h-tan(\alpha)Dx)^{2}+(d+Dx)^{2}}\sqrt{(h+H-tan(\alpha)Dx)^{2}+(d+Dx)^{2}}})
+\\s.t.\left\{\begin{matrix}
+arccos(\omega)\geq \frac{\pi}{5}
+\\ 
+arctan(\beta) \leq \frac{\pi}{6}
+\end{matrix}\right.
+* F
+F(x,y) = \frac{1}{w_{0}(x-x_{0})^{2}+w_{1}(y-y_{0})^{2}}
+* nfy
+\max \limits_{(x,y)\in A} \ \frac{(h-tan(\alpha)Dx)^{2}+(h+H-tan(\alpha)Dx)^{2}+2(d+Dx)^{2}-H^{2}}{2\sqrt{(h-tan(\alpha)Dx)^{2}+(d+Dx)^{2}}\sqrt{(h+H-tan(\alpha)Dx)^{2}+(d+Dx)^{2}}}+F(x,y)
+\\s.t.\left\{\begin{matrix}
+arccos(\omega)\geq \frac{\pi}{5}
+\\ 
+arctan(\beta) \leq \frac{\pi}{6}
+\end{matrix}\right.
+* 444
+\max \limits_{d,\alpha,h} \ \sum \limits_{(x,y)\in A} \left ( \frac{(h-tan(\alpha)Dx)^{2}+(h+H-tan(\alpha)Dx)^{2}+2(d+Dx)^{2}-H^{2}}{2\sqrt{(h-tan(\alpha)Dx)^{2}+(d+Dx)^{2}}\sqrt{(h+H-tan(\alpha)Dx)^{2}+(d+Dx)^{2}}}+\lambda F(x,y)  \right )
+\\s.t.\left\{\begin{matrix}
+arccos(\omega)\geq \frac{\pi}{5}
+\\ 
+arctan(\beta) \leq \frac{\pi}{6}
+\end{matrix}\right.

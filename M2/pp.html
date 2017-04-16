@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2017-03-29 Wed 09:02 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title></title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Li Jiajie" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgbae0bf9">1. 问题分析</a>
+<ul>
+<li><a href="#org474a0b4">1.1. 哪个座位能获得最大的视觉舒适度</a></li>
+<li><a href="#org0b7c914">1.2. 哪一些座位能够同时兼顾视觉舒适度与听觉舒适度</a></li>
+<li><a href="#org5620ea9">1.3. 在考虑到视觉焦点活动范围的情况下，能获取最佳舒适度的座位</a></li>
+<li><a href="#org81ed932">1.4. 电影院该如何设计地板线、影院第一排座位距离屏幕等因素，来提高观众满意度</a></li>
+</ul>
+</li>
+<li><a href="#org4ef0d1c">2. 基本假设</a></li>
+<li><a href="#org4f974b6">3. 符号说明</a></li>
+<li><a href="#org3243be5">4. 模型建立</a>
+<ul>
+<li><a href="#org864e51b">4.1. 问题一</a></li>
+<li><a href="#org0ebcddc">4.2. 问题二</a></li>
+<li><a href="#org10bce75">4.3. 问题三</a></li>
+<li><a href="#orgf9138d5">4.4. 问题四</a></li>
+</ul>
+</li>
+<li><a href="#org8fa243d">5. 模型推广</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbae0bf9" class="outline-2">
+<h2 id="orgbae0bf9"><span class="section-number-2">1</span> 问题分析</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>观众的舒适度涵盖为听觉舒适度与视觉舒适度</li>
+<li>影响视觉舒适度的因素有以下两点
+<ol class="org-ol">
+<li>观众眼睛与屏幕上下边的夹角</li>
+<li>观众的眼睛与屏幕两侧的夹角</li>
+<li>观众看到屏幕上边需上仰头部的角度</li>
+<li>视觉焦点的活动范围即荧幕顶端视线与水平视线角度</li>
+</ol></li>
+<li>可以改变以提高观众舒适度的因素有
+<ol class="org-ol">
+<li>观众的座位</li>
+</ol></li>
+</ul>
+</div>
+
+<div id="outline-container-org474a0b4" class="outline-3">
+<h3 id="org474a0b4"><span class="section-number-3">1.1</span> 哪个座位能获得最大的视觉舒适度</h3>
+<div class="outline-text-3" id="text-1-1">
+<ol class="org-ol">
+<li>尽量提高观众眼睛与屏幕上下边的夹角</li>
+<li>观众眼睛与屏幕两侧的夹角大于等于36度</li>
+<li>观众看到屏幕上边需上仰头部的角度不超过30度</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org0b7c914" class="outline-3">
+<h3 id="org0b7c914"><span class="section-number-3">1.2</span> 哪一些座位能够同时兼顾视觉舒适度与听觉舒适度</h3>
+</div>
+<div id="outline-container-org5620ea9" class="outline-3">
+<h3 id="org5620ea9"><span class="section-number-3">1.3</span> 在考虑到视觉焦点活动范围的情况下，能获取最佳舒适度的座位</h3>
+</div>
+<div id="outline-container-org81ed932" class="outline-3">
+<h3 id="org81ed932"><span class="section-number-3">1.4</span> 电影院该如何设计地板线、影院第一排座位距离屏幕等因素，来提高观众满意度</h3>
+</div>
+</div>
+<div id="outline-container-org4ef0d1c" class="outline-2">
+<h2 id="org4ef0d1c"><span class="section-number-2">2</span> 基本假设</h2>
+<div class="outline-text-2" id="text-2">
+<ol class="org-ol">
+<li>所有的观众眼睛到地面的距离都相同</li>
+<li>将座位视为质点</li>
+<li>观众的最终视力与最终听觉不影响观影舒适度</li>
+<li>从上往下看屏幕与座位构成的凸包是一个长方形</li>
+<li>任一座位除位置之外不特殊</li>
+<li>前一排的观众不会遮挡后一排观众的视线</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org4f974b6" class="outline-2">
+<h2 id="org4f974b6"><span class="section-number-2">3</span> 符号说明</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li>H 为屏幕的高度</li>
+<li>W 为屏幕的宽度</li>
+<li>h 为屏幕底部距离地面的高度</li>
+<li>d 为第一排座位距离屏幕的水平距离</li>
+<li>α 为座椅所在地面与水平面所成夹角</li>
+<li>h 为眼睛距离座椅所在地面的高度</li>
+<li>x 为观众座位的行数</li>
+<li>y 为观众座位的列数</li>
+<li>θ 为观众眼睛与屏幕上下边的夹角</li>
+<li>β 为观众看到屏幕上边所需要仰头的夹角</li>
+<li>D 为每一行座位之间的水平间距</li>
+<li>w 为座位的宽度</li>
+<li>A 为所有座位的集合</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3243be5" class="outline-2">
+<h2 id="org3243be5"><span class="section-number-2">4</span> 模型建立</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-org864e51b" class="outline-3">
+<h3 id="org864e51b"><span class="section-number-3">4.1</span> 问题一</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>若以屏幕左侧边所在直线与房间的地面所在的直线的交点为原点O，垂直屏幕地板线为X轴，屏幕所在直线为Y轴，建立平面直角坐标系XOY。</li>
+<li>则可在该平面直角坐标系中得到
+<ol class="org-ol">
+<li>观众眼睛的坐标<img src="xy.gif" alt="xy.gif" /></li>
+<li>观众眼睛到屏幕上下边的夹角的余弦值<img src="theta.gif" alt="theta.gif" /></li>
+<li>观众看到屏幕上边需上仰头部的角度的正切值<img src="beta.gif" alt="beta.gif" /></li>
+</ol></li>
+<li>若以屏幕所在墙壁底部的直线为Z轴，在水平面上相交垂直于屏幕左侧边的直线为X轴，其交点为原点O，建立平面直角坐标系XOZ。</li>
+<li>则可在该平面直角坐标系中得到
+<ol class="org-ol">
+<li>观众眼睛的坐标<img src="wz.png" alt="wz.png" /></li>
+<li>观众眼睛与屏幕两侧的夹角的余弦值<img src="omega.png" alt="omega.png" /></li>
+</ol></li>
+<li>即得约束条件下的最优化问题<img src="ost.png" alt="ost.png" /></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0ebcddc" class="outline-3">
+<h3 id="org0ebcddc"><span class="section-number-3">4.2</span> 问题二</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>考虑到电影院的音响布置方式以及音响设备各不相同，所以不从音响的位置考虑这个问题。</li>
+<li>院线的电影院近乎拥有一样的配置，尽管各大院线采用不同的音响配置，但是他们配置音响的目的都在于使观众尽可能的体验到最好的音响体验。</li>
+<li>基于上述情况，只需要考虑影厅每个座位的使用次数，即可近似认为使用次数最高的位置为音响最佳的位置。</li>
+<li>可以认为，越接近最佳视觉感受位置的座位可以获得越好的听觉体验，在这里引入牵引址的概念。</li>
+<li>令最佳位置为<img src="x0y0.png" alt="x0y0.png" /></li>
+<li>得牵引力，其中w0与w1为行与列方向上的权重来平衡作为宽度与长度的不同, λ负责牵引力在目标函数中的权重问题，其大小需要训练获得<img src="fxy.png" alt="fxy.png" /></li>
+<li>更新最优化问题<img src="nfy.png" alt="nfy.png" /></li>
+<li>通过找到问题一中约束条件的边界，可以找到满足约束条件的所有的座位。</li>
+<li>计算满足条件的座位的目标函数值，对这些值进行聚类，例如k-means，其中k为2，与最佳座位在同一类中的所有座位，即为黄金座位。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org10bce75" class="outline-3">
+<h3 id="org10bce75"><span class="section-number-3">4.3</span> 问题三</h3>
+<div class="outline-text-3" id="text-4-3">
+<ul class="org-ul">
+<li>问题一的解答以满足到荧幕顶端视线与水平视线角度应小于35°的条件。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf9138d5" class="outline-3">
+<h3 id="orgf9138d5"><span class="section-number-3">4.4</span> 问题四</h3>
+<div class="outline-text-3" id="text-4-4">
+<ul class="org-ul">
+<li>之前的目标函数体现的是单一观众根据其位置的满意程度。</li>
+<li>而从影院的角度考虑，应该提升总体观众的体验。</li>
+<li>由于影院每个座位的使用率不同，有些座位大部分时候没有人使用，因此，它们对求解最优解的帮助很小，因此，引入权重p</li>
+<li>其中p可以是一周内影厅每个座位的使用次数满足的二维正态分布</li>
+<li>从而更新目标函数<img src="444.png" alt="444.png" /></li>
+<li>容易得到，a是影响观影体验较为显著的因素</li>
+<li>通过比较不同的a下的观众舒适度，可以发现，a与用户体验成正比，因此，影厅应该使a为能够接受的最大角度，其中，制约因素如同重力影响。</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org8fa243d" class="outline-2">
+<h2 id="org8fa243d"><span class="section-number-2">5</span> 模型推广</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>模型中假设人眼的视力都足够好。</li>
+<li>但是实际上，有一部分人的视力使得他们在影厅的某些位置上不能获得正常的观影体验，</li>
+<li>而且，佩戴眼镜也会影响例如观影者视觉焦点的移动情况。而人们近视程度（例如近视度数）满足正态分布。而根据不同近视程度对各项属性的影响，可以得出各项属性的正态分布。</li>
+<li>模型中假设影厅的座位每列每行互相平行，但是实际上，每一行座位可以是圆弧形，这使得前排座位中间部分的人们更加靠后以获得更大的视角，后排两边的人数更靠前以获得更大的视角。</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Li Jiajie</p>
+<p class="date">Created: 2017-03-29 Wed 09:02</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
